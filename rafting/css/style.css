@@ -5,11 +5,13 @@
 
 body {
  background-color: rgb(245, 245, 245);
+ font-size: 16 px;
 }
 
 header, footer {
  background-color: rgb(255, 255, 0);
  display: grid;
+ grid-template-columns: 1fr, 1fr, 1fr;
  align-items: center;
  justify-content: center;
 }
