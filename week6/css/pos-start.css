@@ -108,7 +108,7 @@
     display: grid;
     height: 400px;
   }
-  
+
   .red4 {
     background-color: red;
     grid-column: 1/3;
@@ -131,7 +131,8 @@
   }
   /* Activity 5 Styles */
   .content5 {
-    /* Activity Five Container */  
+    /* Activity Five Container */
+    display: contents;  
   }
 
   .red5 {
