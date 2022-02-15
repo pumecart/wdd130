@@ -105,48 +105,37 @@
   /* Activity 4 Styles */
   .content4 {
     /* Activity Four Container */
-    height: 400px;
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 100px 100px 100px;
+    height: 400px;
   }
+  
   .red4 {
-    width: 200px;
-    height: 100px;
     background-color: red;
     grid-column: 1/3;
     grid-row: 1/3;
   }
   .green4 {
-    width: 200px;
-    height: 100px;
     background-color: green;
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 2/3;
   }
   .yellow4 {
-    width: 200px;
-    height: 100px;
     background-color: gold;
     grid-column: 1/3;
     grid-row: 3/4;
   }
   .blue4 {
-    width: 200px;
-    height: 300px;
     background-color: blue;
     grid-column: 2/3;
     grid-row: 1/4;
   }
   /* Activity 5 Styles */
   .content5 {
-    /* Activity Five Container */
-    height: 400px;
-    
+    /* Activity Five Container */  
   }
+
   .red5 {
-    width: 700px;
-    height: 60px;
+    height: 100px;
     background-color: red;
   }
   
@@ -154,37 +143,27 @@
     width: 150px;
     height: 150px;
     background-color: green;
-    margin-bottom: 1rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
     float: left;
     
   }
   .yellow5 {
-    width: 700px;
-    height: 300px;
+
     background-color: gold;
-    padding: 1rem top 1rem bottom 1rem right 1rem left;
-    margin-left: 1rem gold;
-    margin-top: 1rem gold;
-    margin-right: 1rem gold;
+    padding: 1rem;
   
   }
 
   .blue5 {
-    width: 700px;
-    height: 60px;
+    height: 100px;
     background-color: blue;
   }
 
   /* Activity 6 Styles */
   .content6 {
     /* Activity Six Container */
-    height: 600px;
-    width: 600px;
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px;
-    position: relative
 
   }
   .red6 {
@@ -210,14 +189,12 @@
     background-color: gold;
     grid-row: 3/7;
     grid-column: 5/7;
-    position: relative;
     z-index: 3;
   }
   .blue6 {
     width: 400px;
     height: 200px;
     background-color: blue;
-    position: absolute;
     grid-row: 2/6;
     grid-column: 2/6;
     z-index: 1;
