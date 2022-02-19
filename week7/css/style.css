@@ -167,7 +167,7 @@ button {
 
 .picture1, .picture2{
     margin: 1rem;
-    box-shadow: 1rem rgb(0, 0, 255);
+    box-shadow: 1rem blue;
     
 }
 
