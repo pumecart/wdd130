@@ -59,7 +59,8 @@ nav{
 	color: rgb(255, 0, 255);
 	padding: 0.5rem 1rem;
 	text-decoration: none;
-}  */
+}
+
 .navigation a:hover {
 	color: #000;
 	background-color: #ddd;
@@ -141,18 +142,18 @@ button {
 }
 
 .picture1{
-    grid-template-columns: 2/3;
-    grid-template-rows: 1/2;
+    grid-template-columns: 2 / 3;
+    grid-template-rows: 1 / 2;
 }
 
 .picture2{
-    grid-template-columns: 1/2;
-    grid-template-rows: 2/3;
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 2 / 3;
 }
 
 .section2{
-    grid-template-columns: 2/3;
-    grid-template-rows: 2/3;
+    grid-template-columns: 2 / 3;
+    grid-template-rows: 2 / 3;
 }
 
 
