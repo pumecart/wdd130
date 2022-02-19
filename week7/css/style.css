@@ -1,8 +1,6 @@
 * {
- margin: 0rem;
- padding: 0rem;
-
-}
+    margin: 0rem;
+   }
 
 body {
  background-color:  rgb(211, 211, 211);
@@ -15,60 +13,62 @@ body {
 }
 
 header, footer {
- background-color: rgb(245, 245, 245);
+ max-width: 960;
  align-items: center;
- justify-content: center;
- margin: 1rem;
- border: 1px solid rgb(0, 0, 255);
+ margin: 1rem auto;
+ background-color: rgb(255, 255, 255);
  padding: .5rem;
 }
 
 header {
  display: grid;
- grid-template-columns: 200px 2fr;
-
+ grid-template-columns: 130px 1fr 1fr;
+ background-color: rgb(255, 255, 255);
 }
-
+ 
 .logo-pic {
- grid-column: 1/2; 
+    margin: .5rem;
+} 
+
+h1{
+    margin-left: 2rem;
+    justify-content: center;
 }
 
-header,
-nav {
-	margin: 0 auto;
+nav{
+    flex: 1 1 auto;
 }
 
 .navigation {
+    display: flex;
 	list-style: none;
-	display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: end;
 	background-color: rgb(255, 255, 255);
 	text-align: center;
+
     
 }
-.navigation li {
-	flex: 1 1 auto;
-}
-.navigation a {
-	display: block;
-	color: rgb(255, 69, 0);
-	padding: 0.75rem;
+ .navigation li {
+    margin: 1rem;
+} 
+ .navigation a {
+    justify-content: flex-end;
+    text-align: center;
+    font-size: large;
+	color: rgb(255, 0, 255);
+	padding: 0.5rem 1rem;
 	text-decoration: none;
-}
+}  */
 .navigation a:hover {
 	color: #000;
 	background-color: #ddd;
 	font-weight: 700;
 }
 
-a {
- display: block;
- color: rgb(0, 0, 139);
- padding: .75rem;
- font-size: larger;
-}
-
 .page {
-    
+    max-width: 960;
     margin: 1rem auto;
 }
 
@@ -88,7 +88,7 @@ p {
 	margin: 0;
 }
 
-.stats {
+.cta {
 	position: absolute;
 	top: 25px;
 	right: 50px;
@@ -102,18 +102,14 @@ p {
 }
 
 picture img {
-	box-shadow: 0 0 2rem rgb(0, 0, 255);
+	box-shadow: 0 0 .50rem rgb(0, 0, 255);
 }
 
 button {
-    display: grid;
-    grid-template-columns: 1;
     height: 50px;
     border-radius: 50px;
-    overflow: hidden;
     font-family: "Prata",'Times New Roman', Times, serif;
     font-size: medium;
-    align-self: center;
     padding: .75rem;
     background-color: rgb(0, 255, 255);
     border: none
@@ -121,7 +117,8 @@ button {
 
 .mainbody {
     display: grid;
-    
+    max-width: 960;
+    gap: 1rem;
     margin: 1rem;
     padding: 1rem;
     justify-content: center;
@@ -162,6 +159,8 @@ button {
 
 
 .section3 {
+    grid-column: 1/3;
+    grid-row: 3/4;
     text-align: center;
     align-self: center;
     
@@ -175,6 +174,8 @@ button {
 footer{
     display: flex;
     margin: auto;
+    border-top: 1px solid rgb(0, 0, 0);
+    
 }
 
 .footertext{
@@ -183,7 +184,13 @@ footer{
 
 .socialmedia{
     display: flex;
+    justify-content: flex-end;
     flex: 1 1 auto;
-    align-items: right;
     padding: 0.75rem;
+}
+
+.socialmedia a{
+    color: fuchsia;
+   
+
 }
