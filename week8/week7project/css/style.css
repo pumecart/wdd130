@@ -2,6 +2,12 @@ body{
     margin: 1rem
 }
 
+header, footer{
+    margin: 1.75rem rgb(248, 91, 117)
+    background-color: white;
+
+}
+
 h1, h2, h3{
     font-family: "Licorice", 'Times New Roman', Times, serif;
     font-weight: 700;
