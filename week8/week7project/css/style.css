@@ -1,4 +1,12 @@
 body{
+    margin: 1rem
+}
+
+h1, h2, h3{
     font-family: "Licorice", 'Times New Roman', Times, serif;
     font-weight: 700;
+}
+
+p{
+    font-family: "Slabo", 'Times New Roman', Times, serif;    
 }
