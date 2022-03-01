@@ -1,0 +1,281 @@
+* {
+    margin: 0rem;
+   }
+
+body {
+ background-color:  rgb(211, 211, 211);
+ font-family: "Prata",'Times New Roman', Times, serif;
+ font-size: medium;
+ margin: 1rem;
+ border: 1px;
+ padding: 2rem;
+
+}
+
+header, footer {
+ align-items: center;
+ margin: 1rem auto;
+ background-color: rgb(255, 255, 255);
+ padding: .5rem;
+}
+
+header {
+ display: grid;
+ grid-template-columns: 130px 1fr 1fr;
+ background-color: rgb(255, 255, 255);
+}
+ 
+.logo-pic {
+    margin: .5rem;
+} 
+
+h1{
+    margin-left: 2rem;
+    justify-content: center;
+    color: blue;
+}
+
+nav{
+    flex: 1 1 auto;
+}
+
+.navigation {
+    display: flex;
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: end;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+
+    
+}
+ .navigation li {
+    margin: 1rem;
+} 
+
+.navigation a{ 
+    justify-content: flex-end;
+    text-align: center;
+    font-size: large;
+	color: black;
+	padding: 0.5rem 1rem; 
+    text-decoration: none;
+}
+
+.navigation a.active, .navigation a:hover {
+	color: #000;
+	background-color: #ddd;
+	font-weight: 700;
+}
+
+.page {
+    max-width: 1050px;
+    margin: 1rem auto;
+}
+
+.herodiv, .herodiv1, .herodiv2 {
+	margin: 10px auto;
+	position: relative;
+    width: 100%
+}
+
+h2 {
+	margin: 0 0 .5rem;
+	border-bottom: 1px solid #000;
+    align-content: center;
+    color: blue;
+}
+
+p {
+	margin: 0;
+}
+
+.cta {
+	position: absolute;
+	top: 25px;
+	right: 50px;
+	background: radial-gradient(#eee, lightblue);
+	border: .5px solid lightblue;
+	padding: 1rem;
+	box-shadow: 0 0 15px blue;
+	opacity: 1;
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+
+picture img {
+	box-shadow: 0 0 .50rem rgb(0, 0, 255);
+}
+
+button {
+    height: 50px;
+    border-radius: 50px;
+    font-family: "Prata",'Times New Roman', Times, serif;
+    font-size: medium;
+    color: white;
+    padding: .75rem;
+    background-color: rgba(0, 0, 255, 0.691);
+    border: none
+}
+
+.mainbody {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 40% 20%;
+}
+
+.section1, .section2, .section3 {
+    align-content: center;
+    margin: 1rem;
+    padding: .75rem;
+    text-align: justify;
+    line-height: 2;
+}
+
+.section1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.picture1{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.picture2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.section2{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+.section3 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;
+    align-self: center;
+    
+}
+
+.picture1, .picture2{
+    box-shadow: 5px 5px 5px blue;
+    
+}
+
+.mainbody1 {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr
+}
+
+.h3cofo{
+    margin: 1rem;
+}
+
+.p1{
+    margin: 1rem;
+}
+
+.sect1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.pic1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    gap: 2rem;
+    
+}
+
+.h2s{
+    display: flex;
+}
+
+.mainbody2{
+    display: grid;
+    width: 1050px;
+    column-gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr 1fr;
+}
+
+.h2s{
+    grid-column: 1/4; 
+    grid-row: 1/2;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.sect2{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.sect3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.pic3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.sect4{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.pic4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+footer{
+    display: flex;
+    margin: auto;
+    
+}
+
+.footertext{
+    text-align: left;
+    padding: .5rem;
+
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: flex-end; 
+    flex: 1 1 auto;
+}
+
+.socialmedia a{
+    color: blue;
+}
