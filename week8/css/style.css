@@ -53,17 +53,17 @@ nav{
  .navigation li {
     margin: 1rem;
 } 
- .navigation a {
+
+.navigation a{ 
     justify-content: flex-end;
     text-align: center;
     font-size: large;
 	color: black;
-	padding: 0.5rem 1rem;
-	text-decoration: none;
+	padding: 0.5rem 1rem; 
+    text-decoration: none;
 }
 
-
-.navigation a:hover {
+.navigation a.active, .navigation a:hover {
 	color: #000;
 	background-color: #ddd;
 	font-weight: 700;
@@ -140,7 +140,6 @@ button {
     line-height: 2;
 }
 
-
 .section1{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -175,6 +174,89 @@ button {
     
 }
 
+.mainbody1 {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr
+}
+
+.h3cofo{
+    margin: 1rem;
+}
+
+.p1{
+    margin: 1rem;
+}
+
+.sect1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.pic1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    gap: 2rem;
+    
+}
+
+.h2s{
+    display: flex;
+}
+
+.mainbody2{
+    display: grid;
+    width: 1050px;
+    column-gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr 1fr;
+}
+
+.h2s{
+    grid-column: 1/4; 
+    grid-row: 1/2;
+    align-items: center;
+}
+
+.pic2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.sect2{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.sect3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.pic3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.sect4{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.pic4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
 footer{
     display: flex;
     margin: auto;
@@ -183,17 +265,16 @@ footer{
 
 .footertext{
     text-align: left;
+    padding: .5rem;
+
 }
 
 .socialmedia{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
     flex: 1 1 auto;
-    padding: 0.75rem;
 }
 
 .socialmedia a{
     color: blue;
-   
-
 }
