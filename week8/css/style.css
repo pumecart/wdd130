@@ -225,6 +225,7 @@ button {
     grid-column: 1/4; 
     grid-row: 1/2;
     align-items: center;
+    justify-content: center;
 }
 
 .pic2{
