@@ -1,11 +1,79 @@
-body{
-    margin: 1rem
+* {
+    margin: 0rem;
+    }
+
+.page{
+    max-width: 1050px;
+    margin: 1rem auto;
 }
 
-header, footer{
-    margin: 1.75rem rgb(248, 91, 117)
-    background-color: white;
+header, footer {
+    align-items: center;
+    margin: 1rem auto;
+}
 
+header{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 70% 30%;
+    background-color: white;
+    border: 1rem solid rgb(255, 41, 77);
+    width: 1080px;
+    height: 160px;
+}
+
+.logo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 1rem;
+    justify-content: center;
+    align-content: center;
+
+}
+
+h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: center;
+    align-content: center;
+    text-align-last: center;
+    margin: 1rem;
+}
+
+nav{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    flex: 1 1 auto;
+}
+
+.navigation{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    background-color: pink;
+}
+
+.navigation li{
+    margin: 1rem;
+}
+
+.navigation a{
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navigation a.active, .navigation a:hover {
+	color: #000;
+	background-color: rgb(248, 99, 123);
+	font-weight: 700;
 }
 
 h1, h2, h3, h4, h5{
@@ -15,4 +83,61 @@ h1, h2, h3, h4, h5{
 
 p{
     font-family: "Slabo", 'Times New Roman', Times, serif;    
+}
+
+main{
+    display: grid;
+    width: 1080px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: larger;
+}
+
+.herodiv{
+    grid-column: 1/2;
+    box-shadow: .5rem .5rem .5rem black;
+    margin: 1rem;
+}
+
+.mainbody{
+    grid-column: 2/2;
+    text-align: justify;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h2{
+    font: bold;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer{
+    display: flex;
+    margin: auto;
+    width: 1080px;
+    background-color: rgb(255, 41, 77);
+    
+}
+
+.footertext{
+    font-size: larger;
+    text-align: left;
+    justify-content: center;
+    padding: .5rem;
+    margin: 1rem;
+
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: flex-end; 
+    flex: 1 1 auto;
+}
+
+.socialmedia a{
+    margin: 1rem;
 }
