@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .card{
+            width: 400px;
+            background-color: lightcyan;
+            border-radius: 25px;
+            position: relative;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+        }
+
+        .heroimage img{
+            width: 100%;
+            border-radius: 25px 25px 0px 0px;
+        }
+
+        .title, .des{
+            text-align: center;
+            margin: .5rem;
+        }
+
+        .des{
+            font-size: 20px;
+            text-align: left;
+            margin: 1rem;
+        }
+
+        body {
+            background: linear-gradient(to right, #8e9eab, #eef2f3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            letter-spacing: 0.03em;
+        }
+
+        .button{
+            float: right;
+            margin: 1rem;
+        }
+
+        button{
+            border: solid .10rem grey;
+            border-radius: 5px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: .25rem;
+            padding-bottom: .25rem;
+        }
+
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .floatimg{
+            position: absolute;
+            top: 25px;
+	        right: 50px; 
+            transition: transform .2s;
+        }
+
+        .floatimg:hover{
+            transform: scale(1.5);
+            
+        }
+
+        h2{
+            font-size: small;
+            margin: 1rem;
+        }
+
+        .detail{
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heroimage">
+            <img src="images-mediacard/laie_hawaii_temple_lds.jpg" alt="hero">
+        </div>
+        <div class="floatimg">
+            <img src="data:image/png;base64,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" alt="floatimg">
+        </div>  
+        <div class="title">
+            <h1>Laie Hawaii Temple</h1>
+        </div>
+        <div class="des">
+            <p>The Laie Hawaii Temple was dedicated by
+                Joseph F. Smith on June 1, 1915.  It was the first 
+                temple built in Polynesia (and in Hawaii).
+            </p>
+        </div>
+        <div class="detail">
+            <h2>SQ FT: 42,100</h2>
+        </div>
+        <div class="button">
+            <a href="https://www.churchofjesuschrist.org/temples/details/laie-hawaii-temple?lang=eng"><button>details...</button></a>
+        </div>
+    </div>
+    
+</body>
+</html>
