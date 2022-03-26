@@ -147,10 +147,13 @@ h3{
 
 .solp{
     font-size: 24px;
+    margin: 1rem;
 }
 
 .solh3p{
     font-size: 18px;
+    margin: .5rem;
+    padding: .5rem;
 }
 
 .intro{
