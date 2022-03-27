@@ -262,6 +262,121 @@ picture.pump{
     font: black;
     text-decoration: none;
 }
+
+.com-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 10% 40%;
+    row-gap: 25px;
+    margin: 1rem;
+    padding: 1rem;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.maincom{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.comh2{
+    font-size: 48px;
+}
+
+.pcom{
+    font-size: larger;
+}
+
+/* form{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    margin: 1rem;
+    width: 900px;
+    padding: 1em;
+    border: 4px solid black;
+    border-radius: 1em;
+    background-color: pink;
+}
+
+.ulform{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form .licom + .licom{
+    margin-top: 1em;
+} */
+
+form{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.licom{
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+
+label{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+    padding: .25rem;
+}
+
+input{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font: 20px "Slabo";
+    padding: 1rem;
+    height: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 5px solid rgb(243, 97, 122);
+}
+
+input:focus{
+    border-color: black;
+}
+
+.quote{
+    grid-column: 1/4;
+    display: grid;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    grid-column: 33% 33% 33%;
+    column-gap: 30px;
+}
+
+.h3com{
+    text-align: center;
+}
+
+.stacy{
+    grid-column: 1/2;
+}
+
+.Janice{
+    grid-column: 2/3;
+}
+
+.Christine{
+    grid-column: 3/4;
+}
+
 footer{
     display: flex;
     margin: auto;
