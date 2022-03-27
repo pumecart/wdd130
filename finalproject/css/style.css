@@ -254,7 +254,7 @@ picture.pump{
 .sitstand li, .carrier li, .babycarrier li, .bbottle li, .bottlec li, .bpump li{
     background-color: pink;
     border: .10rem solid rgb(238, 89, 114);
-    border-radius: 40%;
+    border-radius: 10px;
     padding: .25rem;
 } 
 
@@ -340,7 +340,7 @@ input{
     height: 20px;
     width: 300px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: pink;
     border: 5px solid rgb(243, 97, 122);
 }
 
