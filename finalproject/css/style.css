@@ -259,7 +259,6 @@ picture.pump{
 } 
 
 .sitstand a, .carrier a, .babycarrier a, .bbottle a, .bottlec a, .bpump a{
-    font: black;
     text-decoration: none;
 }
 
@@ -357,7 +356,7 @@ input:focus{
     text-align: left;
     justify-content: center;
     align-items: center;
-    grid-column: 33% 33% 33%;
+    grid-column: 32% 32% 32%;
     column-gap: 30px;
 }
 
