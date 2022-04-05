@@ -356,7 +356,7 @@ input:focus{
     text-align: left;
     justify-content: center;
     align-items: center;
-    grid-column: 32% 32% 32%;
+    grid-column: 1fr 1fr 1fr;
     column-gap: 30px;
 }
 
