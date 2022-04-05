@@ -358,7 +358,6 @@ input:focus{
     font-size: large;
     justify-content: center;
     align-items: center;
-    grid-column: 1fr 1fr 1fr;
     column-gap: 30px;
 }
 
